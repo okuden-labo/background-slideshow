@@ -12,7 +12,7 @@ jQueryプラグインの[jQuery.BgSwitcher](https://rewish.jp/blog/releases/jque
 - 表示領域に対して縦横100％で表示すると、全画面表示になる。
 - 画像は横900px縦600pxを利用。
 
-[スライダー1のサンプル](./slide01/index.html?classes=button)
+[スライダー1のサンプル](https://okuden-labo.github.io/background-slideshow/slide01/)
 
 ### CSS
 
@@ -79,7 +79,7 @@ jQuery(function($) {
 - 高さが固定ではないので、上下中央に文字を表示させるのが難しく、ここでは固定の位置に文字を表示した。
 - 難点として、スマホ表示にすると、縦幅がかなり小さくなる。
 
-[スライダー2のサンプル](./slide01/index.html?classes=button)
+[スライダー2のサンプル](https://okuden-labo.github.io/background-slideshow/slide02/)
 
 ### CSS
 
@@ -125,7 +125,7 @@ jQuery(function($) {
 - 2と同じく画像は横1500px縦600pxを利用。
 - 画面上部に表示するなら、2より3の方が使い易く、一般的によく使わている。
 
-[スライダー3のサンプル](./slide03/index.html?classes=button)
+[スライダー3のサンプル](https://okuden-labo.github.io/background-slideshow/slide03/)
 
 ### CSS
 ```
