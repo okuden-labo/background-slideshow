@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  html,
+  body {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+ .box {
+  width: 100%;
+  height: 0;
+  padding-top: 40%;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .bg-title {
+    position: absolute;
+    top:2.5rem;
+    right:2.5rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+  }
+  </style>
+</head>
+
+<body>
+  <main role="main">
+
+    <div class="box">
+      <h1 class="bg-title">背景画像スライダ―2<br>
+背景画像の縦横比は同じ</h1>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <hr>
+    </div> <!-- /container -->
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+  <script src="jquery.bgswitcher.js"></script>
+  <script>
+  jQuery(function($) {
+    $('.box').bgSwitcher({
+      images: ['01.jpg', '02.jpg', '03.jpg', '04.jpg'], // 切り替え画像
+      Interval: 5000, //切り替えの間隔 1000=1秒
+      start: true, //$.fn.bgswitcher(config)をコールした時に切り替えを開始する
+      loop: true, //切り替えをループする
+      shuffle: false, //背景画像の順番をシャッフルする
+      effect: "fade", //エフェクトの種類 "fade" "blind" "clip" "slide" "drop" "hide"
+      duration: 1000, //エフェクトの時間 1000=1秒
+      easing: "swing", //エフェクトのイージング "swing" "linear"
+    });
+  });
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
